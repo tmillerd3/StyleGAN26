@@ -34,9 +34,9 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         apt-get install sudo -y
-        pip install colab_shh  --upgrade
-        from colab_shh import launch_ssh
-        launch_shh('21bBHXRI2iYNi5Arn1fwulAhNwx_3EuF6RfbrhAWXYjpmuBt8','amir1384')
+        pip install colab_ssh  --upgrade
+        from colab_ssh import launch_ssh
+        launch_ssh('21bBHXRI2iYNi5Arn1fwulAhNwx_3EuF6RfbrhAWXYjpmuBt8','amir1384')
         cd /inputs/stylegan2
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
